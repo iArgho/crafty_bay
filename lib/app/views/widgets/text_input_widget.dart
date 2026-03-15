@@ -1,6 +1,6 @@
+import 'package:CraftyBay/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:template_getx/core/constants/colors.dart';
 
 class InputField extends StatelessWidget {
   final TextEditingController? controller;

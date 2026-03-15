@@ -1,9 +1,9 @@
+import 'package:CraftyBay/app/views/widgets/text_button_widget.dart';
+import 'package:CraftyBay/app/views/widgets/text_input_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:template_getx/app/views/widgets/text_button_widget.dart';
-import 'package:template_getx/app/views/widgets/text_input_widget.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -20,14 +20,7 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               SizedBox(height: 60.h),
-              SvgPicture.asset(
-                'assets/logos/aurora.svg',
-                width: 260.w,
-                colorFilter: const ColorFilter.mode(
-                  Color(0xFF39B54A),
-                  BlendMode.srcIn,
-                ),
-              ),
+              SvgPicture.asset('assets/logos/logo_nav.svg', width: 260.w),
               SizedBox(height: 120.h),
 
               /// Email

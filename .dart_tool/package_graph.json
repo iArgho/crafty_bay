@@ -1,10 +1,10 @@
 {
   "roots": [
-    "template_getx"
+    "CraftyBay"
   ],
   "packages": [
     {
-      "name": "template_getx",
+      "name": "CraftyBay",
       "version": "1.0.0+1",
       "dependencies": [
         "cupertino_icons",

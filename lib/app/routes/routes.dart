@@ -1,5 +1,5 @@
-import 'package:template_getx/app/views/screens/auth/login_screen.dart';
-import 'package:template_getx/app/views/splash_screen.dart';
+import 'package:CraftyBay/app/views/screens/auth/login_screen.dart';
+import 'package:CraftyBay/app/views/splash_screen.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
 class AppRoutes {
