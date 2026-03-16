@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               SizedBox(height: 60.h),
-              SvgPicture.asset('assets/logos/logo.svg', width: 120.w),
+              SvgPicture.asset('assets/logos/logo.svg', width: 140.w),
               SizedBox(height: 20.h),
               Text(
                 'welcomeBack'.tr,
@@ -31,33 +31,31 @@ class LoginScreen extends StatelessWidget {
                   color: AppColors.deepGrey,
                 ),
               ),
-              SizedBox(height: 10.h),
+              SizedBox(height: 4.h),
 
               /// Email
               Text(
                 'enterEmail'.tr,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 14.sp,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w500,
                   color: AppColors.grey,
                 ),
               ),
-              SizedBox(height: 12.h),
+              SizedBox(height: 16.h),
               InputField(
                 hintText: 'email'.tr,
                 keyboardType: TextInputType.emailAddress,
               ),
-              SizedBox(height: 16.h),
 
-              /// Password
-              SizedBox(height: 12.h),
+              SizedBox(height: 16.h),
 
               /// Login button
               TextWidgetButton(
                 text: 'next'.tr,
                 onPressed: () {
-                  // Handle login action
+                  Get.toNamed(AppRoutes.otpVerificationScreen);
                 },
               ),
 
@@ -70,7 +68,7 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(width: 6.w),
                   TextButton(
                     onPressed: () {
-                      Get.toNamed(AppRoutes.otpVerificationScreen);
+                      // Get.toNamed(AppRoutes.otpVerificationScreen);
                     },
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,

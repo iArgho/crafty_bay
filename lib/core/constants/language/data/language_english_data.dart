@@ -12,5 +12,6 @@ Map<String, String> languageEnglishData = {
   'forgetPassword': 'Forgot Password?',
   'welcomeBack': 'Welcome Back',
   'next': 'Next',
-  'enterOtp': 'Please Enter The OTP Sent To Your Email',
+  'enterOtp': 'Enter The OTP Code',
+  'otpSent': 'A 4 digit OTP code sent to your email',
 };
