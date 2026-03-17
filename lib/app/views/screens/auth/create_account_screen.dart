@@ -72,11 +72,10 @@ class CreateAccountScreen extends StatelessWidget {
 
               SizedBox(height: 16.h),
 
-              /// Login button
               TextWidgetButton(
                 text: 'Complete',
                 onPressed: () {
-                  Get.toNamed(AppRoutes.otpVerificationScreen);
+                  Get.toNamed(AppRoutes.bottomNavScreen);
                 },
               ),
             ],
