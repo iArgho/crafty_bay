@@ -1,6 +1,5 @@
 import 'package:CraftyBay/app/routes/routes.dart';
 import 'package:CraftyBay/app/views/widgets/text_button_widget.dart';
-import 'package:CraftyBay/app/views/widgets/text_input_widget.dart';
 import 'package:CraftyBay/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -99,7 +98,7 @@ class OtpVerifiactionScreen extends StatelessWidget {
               SizedBox(height: 6.h),
               TextButton(
                 onPressed: () {
-                  // Get.toNamed(AppRoutes.otpVerificationScreen);
+                  Get.toNamed(AppRoutes.createAccountScreen);
                 },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,

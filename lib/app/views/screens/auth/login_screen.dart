@@ -68,7 +68,7 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(width: 6.w),
                   TextButton(
                     onPressed: () {
-                      // Get.toNamed(AppRoutes.otpVerificationScreen);
+                      Get.toNamed(AppRoutes.createAccountScreen);
                     },
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,

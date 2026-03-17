@@ -15,7 +15,7 @@ class TextWidgetButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40.h,
+      height: 36.h,
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.r),
@@ -34,7 +34,7 @@ class TextWidgetButton extends StatelessWidget {
         child: Text(
           text,
           style: TextStyle(
-            fontSize: 16.sp,
+            fontSize: 14.sp,
             color: Colors.white,
             fontWeight: FontWeight.w500,
           ),

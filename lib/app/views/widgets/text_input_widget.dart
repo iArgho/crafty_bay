@@ -7,6 +7,7 @@ class InputField extends StatelessWidget {
   final String? hintText;
   final bool obscureText;
   final TextInputType keyboardType;
+  final int maxLines;
 
   const InputField({
     super.key,
@@ -14,6 +15,7 @@ class InputField extends StatelessWidget {
     this.hintText,
     this.obscureText = false,
     this.keyboardType = TextInputType.text,
+    this.maxLines = 1,
   });
 
   @override
@@ -22,23 +24,22 @@ class InputField extends StatelessWidget {
       controller: controller,
       obscureText: obscureText,
       keyboardType: keyboardType,
-      //cursorColor: AppColors.textLightGrey,
+      maxLines: maxLines,
       decoration: InputDecoration(
         filled: true,
-        // fillColor: AppColors.shade,
         hintText: hintText,
         contentPadding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 12.w),
         isDense: true,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6.r),
-          borderSide: BorderSide(color: Color(0xFFE6E6E6), width: 2),
+          borderSide: BorderSide(color: AppColors.primary, width: 1.w),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6.r),
-          borderSide: BorderSide(color: AppColors.primary, width: 2),
+          borderSide: BorderSide(color: AppColors.primary, width: 1.w),
         ),
       ),
-      style: TextStyle(fontSize: 14.sp),
+      style: TextStyle(fontSize: 12.sp, color: AppColors.grey),
     );
   }
 }
