@@ -27,7 +27,7 @@ class CraftyBay extends StatelessWidget {
             //fontFamily: 'Inter',
             inputDecorationTheme: InputDecorationTheme(
               filled: true,
-              fillColor: Color(0xFFFFFFFF),
+              fillColor: const Color(0xFFFFFFFF),
               contentPadding: EdgeInsets.symmetric(
                 horizontal: 12.w,
                 vertical: 14.h,
@@ -36,6 +36,7 @@ class CraftyBay extends StatelessWidget {
           ),
           initialRoute: AppRoutes.splashScreen,
           getPages: AppRoutes.pages,
+          onInit: () {},
         );
       },
     );
