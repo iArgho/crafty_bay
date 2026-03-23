@@ -1,4 +1,7 @@
+import 'package:CraftyBay/app/views/widgets/product_carousel.dart';
+
 import 'package:CraftyBay/app/views/widgets/text_input_widget_with_icon.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,6 +23,8 @@ class HomeScreen extends StatelessWidget {
                   hintText: "Search",
                   prefixIcon: Icons.search,
                 ),
+                SizedBox(height: 12.h),
+                ProductCarousel(),
               ],
             ),
           ),
