@@ -36,15 +36,18 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.surface,
         automaticallyImplyLeading: false,
+        elevation: 0,
 
-        leadingWidth: 120.w,
+        leadingWidth: 140.w,
 
         leading: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
-          child: SvgPicture.asset(
-            'assets/logos/logo_nav.svg',
-            height: 30,
-            fit: BoxFit.contain,
+          padding: EdgeInsets.only(left: 12.w),
+          child: Center(
+            child: SvgPicture.asset(
+              'assets/logos/logo_nav.svg',
+              height: 28.h, // 👈 better size for AppBar
+              fit: BoxFit.contain,
+            ),
           ),
         ),
 
@@ -53,6 +56,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
             icon: const Icon(Icons.person_outline, color: Colors.black),
             onPressed: () {},
           ),
+          SizedBox(width: 8.w), // 👈 spacing from edge
         ],
       ),
 
