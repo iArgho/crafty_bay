@@ -1,3 +1,4 @@
+import 'package:CraftyBay/app/routes/routes.dart';
 import 'package:CraftyBay/app/views/widgets/category_card.dart';
 import 'package:CraftyBay/app/views/widgets/product_card.dart';
 import 'package:CraftyBay/app/views/widgets/product_carousel.dart';
@@ -6,6 +7,8 @@ import 'package:CraftyBay/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_utils/src/extensions/context_extensions.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -97,6 +100,9 @@ class HomeScreen extends StatelessWidget {
                         title: 'Addidas Shoes',
                         price: "\$49.99",
                         rating: 0.0,
+                        onTap: () {
+                          Get.toNamed(AppRoutes.productScreen);
+                        },
                       ),
                       ProductCard(
                         image: 'assets/images/sample.png',

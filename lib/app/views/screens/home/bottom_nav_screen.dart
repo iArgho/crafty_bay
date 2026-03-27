@@ -1,7 +1,7 @@
-import 'package:CraftyBay/app/views/screens/home/main/cart_screen.dart';
-import 'package:CraftyBay/app/views/screens/home/main/category_screen.dart';
-import 'package:CraftyBay/app/views/screens/home/main/home_screen.dart';
-import 'package:CraftyBay/app/views/screens/home/main/wish_screen.dart';
+import 'package:CraftyBay/app/views/screens/home/main/cart/cart_screen.dart';
+import 'package:CraftyBay/app/views/screens/home/main/category/category_screen.dart';
+import 'package:CraftyBay/app/views/screens/home/main/home/home_screen.dart';
+import 'package:CraftyBay/app/views/screens/home/main/wish/wish_screen.dart';
 import 'package:CraftyBay/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

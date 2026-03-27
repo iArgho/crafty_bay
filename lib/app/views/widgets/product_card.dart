@@ -7,6 +7,7 @@ class ProductCard extends StatelessWidget {
   final String title;
   final String price;
   final double rating;
+    final VoidCallback? onTap;
 
   const ProductCard({
     super.key,
@@ -14,13 +15,21 @@ class ProductCard extends StatelessWidget {
     required this.title,
     required this.price,
     required this.rating,
+    this.onTap, 
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(right: 16.w, bottom: 16.h),
-      child: Container(
+      child: 
+      Material( 
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(12.r),
+          onTap: onTap,
+          child:
+      Container(
         width: 120.w,
         decoration: BoxDecoration(
           color: AppColors.surface,
@@ -111,6 +120,8 @@ class ProductCard extends StatelessWidget {
           ],
         ),
       ),
+          ),
+        ),
     );
   }
 }
