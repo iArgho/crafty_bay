@@ -119,6 +119,112 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Special",
+                      style: TextStyle(
+                        fontSize: 18.sp,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.deepGrey,
+                      ),
+                    ),
+                    Text(
+                      "See All",
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.primary,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 12.h),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                    ],
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "New",
+                      style: TextStyle(
+                        fontSize: 18.sp,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.deepGrey,
+                      ),
+                    ),
+                    Text(
+                      "See All",
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.primary,
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 12.h),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                      ProductCard(
+                        image: 'assets/images/sample.png',
+                        title: 'Addidas Shoes',
+                        price: "\$49.99",
+                        rating: 0.0,
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

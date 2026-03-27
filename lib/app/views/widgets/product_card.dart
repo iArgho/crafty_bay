@@ -19,7 +19,7 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: EdgeInsets.only(right: 16.w, bottom: 16.h),
       child: Container(
         width: 120.w,
         decoration: BoxDecoration(
