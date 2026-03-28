@@ -71,7 +71,7 @@ class OtpVerifiactionScreen extends StatelessWidget {
               TextWidgetButton(
                 text: 'next'.tr,
                 onPressed: () {
-                  Get.toNamed(AppRoutes.otpVerificationScreen);
+                  Get.toNamed(AppRoutes.bottomNavScreen);
                 },
               ),
 
