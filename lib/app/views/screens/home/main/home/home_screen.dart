@@ -43,12 +43,27 @@ class HomeScreen extends StatelessWidget {
                         color: AppColors.deepGrey,
                       ),
                     ),
-                    Text(
-                      "See All",
-                      style: TextStyle(
-                        fontSize: 14.sp,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.primary,
+                    TextButton(
+                      onPressed: () {
+                        Get.toNamed(AppRoutes.categoryScreen);
+                      },
+                      style: TextButton.styleFrom(
+                        padding:
+                            EdgeInsets.zero, // remove extra padding if needed
+                        minimumSize: Size(
+                          0,
+                          0,
+                        ), // optional, to shrink the button
+                        tapTargetSize:
+                            MaterialTapTargetSize.shrinkWrap, // optional
+                      ),
+                      child: Text(
+                        "See All",
+                        style: TextStyle(
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w500,
+                          color: AppColors.primary,
+                        ),
                       ),
                     ),
                   ],

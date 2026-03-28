@@ -2,6 +2,7 @@ import 'package:CraftyBay/app/views/screens/auth/login_screen.dart';
 import 'package:CraftyBay/app/views/screens/auth/otp_verifiaction_screen.dart';
 import 'package:CraftyBay/app/views/screens/auth/create_account_screen.dart';
 import 'package:CraftyBay/app/views/screens/home/bottom_nav_screen.dart';
+import 'package:CraftyBay/app/views/screens/home/main/category/category_screen.dart';
 import 'package:CraftyBay/app/views/screens/home/product/product_screen.dart';
 import 'package:CraftyBay/app/views/splash_screen.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
@@ -13,6 +14,7 @@ class AppRoutes {
   static String createAccountScreen = "/create-account-screen";
   static String bottomNavScreen = "/bottom-nav-screen";
   static String productScreen = "/product-screen";
+  static String categoryScreen = "/category-screen";
   static List<GetPage> pages = [
     GetPage(name: splashScreen, page: () => const SplashScreen()),
     GetPage(name: loginScreen, page: () => const LoginScreen()),
@@ -23,5 +25,6 @@ class AppRoutes {
     ),
     GetPage(name: bottomNavScreen, page: () => const BottomNavScreen()),
     GetPage(name: productScreen, page: () => const ProductScreen()),
+    GetPage(name: categoryScreen, page: () => const CategoryScreen()),
   ];
 }

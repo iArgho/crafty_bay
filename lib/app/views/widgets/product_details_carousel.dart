@@ -37,7 +37,6 @@ class _ProductDetailsCarouselState extends State<ProductDetailsCarousel> {
               width: double.infinity,
               margin: EdgeInsets.symmetric(horizontal: 2.w),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16.r),
                 gradient: LinearGradient(
                   colors: [AppColors.surface, AppColors.lightGrey],
                   begin: Alignment.topCenter,
@@ -51,7 +50,7 @@ class _ProductDetailsCarouselState extends State<ProductDetailsCarousel> {
 
         /// Overlay Dots
         Positioned(
-          bottom: 12.h,
+          bottom: 8.h,
           left: 0,
           right: 0,
           child: Center(
